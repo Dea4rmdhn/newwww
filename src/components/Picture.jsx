@@ -46,6 +46,8 @@ function Picture() {
           {config.pictureTitle}
         </h1>
         <Carousel>
+          
+          {/* Existing Images */}
           {pictures.map(({ Image, title, description }, index) => (
             <ImageCard
               key={index}

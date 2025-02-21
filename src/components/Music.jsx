@@ -1,16 +1,21 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useContext } from "react";
 import { ArrowLeft } from "./icons";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import config from "./config"; // Import config file
+import MusicContext from "../context/MusicContext";
+
 
 // Dynamically import only the required music images
 const imageFiles = import.meta.glob("../assets/music/*.png");
 
 function Music() {
   const navigate = useNavigate();
+  const { isPlaying, playMusic, pauseMusic, currentSong } = useContext(MusicContext);
+
   const [songs, setSongs] = useState([]);
   const containerRef = useRef(null);
+
 
   useEffect(() => {
     const loadImages = async () => {
@@ -69,6 +74,20 @@ function Music() {
                   <h2 className="text-white font-medium text-sm truncate">{song.title}</h2>
                   <p className="text-white/70 text-xs truncate">{song.artist}</p>
                 </div>
+                <button
+                  onClick={() => {
+                    if (isPlaying && currentSong === song.title) {
+                      pauseMusic();
+                    } else {
+                      playMusic(song.title);
+                    }
+                  }}
+                  className="px-2 py-1 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white text-xs rounded-lg"
+                >
+                  {isPlaying && currentSong === song.title ? 'Pause' : 'Play'}
+                </button>
+
+
               </div>
             </motion.div>
           ))}

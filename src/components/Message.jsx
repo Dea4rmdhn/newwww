@@ -20,6 +20,7 @@ function Message() {
             // Extract the number from filenames (e.g., MessageImage1.png -> 1)
             const aNum = parseInt(a.match(/MessageImage(\d+)\.png/)?.[1] || 0, 10);
             const bNum = parseInt(b.match(/MessageImage(\d+)\.png/)?.[1] || 0, 10);
+        
             return aNum - bNum; // Ensure they are sorted correctly
           })
           .slice(0, config.messageGallery.length) // Only take as many images as needed

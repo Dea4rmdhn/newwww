@@ -6,7 +6,7 @@ const config = {
   */
 
   // 🔐 Passcode Page
-  correctPasscode: "0000", // Change this to any 4-digit code (the passcode for access)
+  correctPasscode: "0908", // Change this to any 4-digit code (the passcode for access)
   passcodeTitle: "Enter Passcode", // Title displayed on the passcode entry page
   successMessage: "Yayy!! :)", // Message shown upon successful passcode entry
   redirectMessage: "Redirecting...", // Message displayed while redirecting after success
@@ -18,25 +18,30 @@ const config = {
   trendingTitle: "Trending searches", // Title for the trending searches section
   trendingSearches: [
     "Why is my bf so cute?", // Example trending search query
-    "Why does Rheina love him more?", // Another example query
-    `Rheina's birthdate (coz her bf forgets)`, // A personalized trending search
+    "Kenapa Dea sayang cowoknya?", // Another example query
+    "Tutor dicintai secara ugal ugalan",
+    `Azab cowo yang suka tantrum?`, // A personalized trending search
   ],
-  proTip: 'Pro tip: try searching "How long have we been together?" ;)', // Helpful tip for users
+  proTip: 'Pro tip: try searching "Berapa lama kita telah bersama?" ;)', // Helpful tip for users
 
   // ⏳ Timer Page
-  anniversaryDate: "2024-10-18", // 📅 Set your anniversary date here (used for the timer)
+  anniversaryDate: "2024-8-9", // 📅 Set your anniversary date here (used for the timer)
   timerTitle: "We've been together for:", // Title displayed on the timer page
   timerMessage: "... and still counting <3", // Message shown alongside the timer
-  timeUnits: {
+  timeUnits: { 
     days: "Days", // Label for days in the timer
     hours: "Hours", // Label for hours in the timer
     minutes: "Minutes", // Label for minutes in the timer
     seconds: "Seconds", // Label for seconds in the timer
   },
 
+
   // 📸 Recap Page
   recapTitle: "Let's recap our time together", // Title for the recap page
   clickMeText: "Click me!", // Text prompting users to interact
+  recapAudio: [
+  { audioUrl:'/assets/music/about you.mp3'}
+  ],
 
   recapSections: [
     { label: "Messages", path: "/recap/message", icon: "Message" }, // Section for messages
@@ -47,78 +52,102 @@ const config = {
   // 🎵 Music Page
   musicTitle: "Songs that remind me of you", // Title for the music page
   musicGallery: [
+    
     {
-      title: "Heavenly", // Title of the song
-      artist: "Cigarettes After Sex", // Artist of the song
+      title: "Cleared", // Title of the song
+      artist: "Lilithzplug", // Artist of the song
       left: "5%", // Positioning on the page
       top: "5%", // Positioning on the page
+      audioUrl:'/assets/music/cleared.mp3',
     },
     {
-      title: "The Boy Is Mine",
-      artist: "Brandy, Monica",
+      title: "Duvet",
+      artist: "Boa",
       left: "40%",
       top: "15%",
+      audioUrl: '/assets/music/Duvet.mp3',
     },
     {
-      title: "Die With A Smile",
-      artist: "Lady Gaga, Bruno Mars",
+      title: "Sailor Song",
+      artist: "Gigi Perez",
       left: "15%",
       top: "40%",
+      audioUrl: '/assets/music/Sailor Song.mp3',
     },
     {
-      title: "Last Night on Earth",
-      artist: "Green Day",
+      title: "Broken",
+      artist: "Isak Danielson",
       left: "30%",
       top: "75%",
+      audioUrl: '/assets/music/Broken.mp3',
     },
     {
-      title: "American Boy",
-      artist: "Estelle, Kanye West",
+      title: "Endless Travel",
+      artist: "Tiko Tiko",
       left: "5%",
       top: "65%",
+      audioUrl:'/assets/music/Endless Travel.mp3',
     },
     {
-      title: "Sparks",
-      artist: "Coldplay",
+      title: "Teeth",
+      artist: "Diggy Graves & WesGhost",
       left: "25%",
       top: "90%",
+      audioUrl: '/assets/music/teeth.mp3',
+      // Add this line
     },
     {
-      title: "Kiss Me Thru The Phone",
-      artist: "Soulja Boy, Sammie",
+      title: "Flawed Mangoes",
+      artist: "KillSwitch Lullaby",
       left: "35%",
       top: "50%",
+      audioUrl:'/assets/music/Flawed Mangoes.mp3',
     },
     {
-      title: "Sunsetz",
-      artist: "Cigarettes After Sex",
+      title: "Be Happy",
+      artist: "FRND",
       left: "10%",
       top: "25%",
+      audioUrl: '/assets/music/Be Happy.mp3',
     },
   ],
 
     // 📝 Message Recap Page
-    messageTitle: "Our Messages", // Title for the messages recap page
+    messageTitle: "Messages for you", // Title for the messages recap page
     messageGallery: [
-      { title: "September 3, 2024", description: "A beautiful day to remember." }, // Message entry
+      { title: "20 Februari, 2025", description: "Tau gak sihh. Edek tuh khawatir banget sama amas. Bukan, bukan khawatir amas direbut orang lain (soalnya edek yakin, pesonaku nggak ada tandingannya 😎). Tapi edek khawatir amas kurang istirahat, makan nggak teratur, terus ngeroko terus" }, // Message entry
       { title: "October 5, 2024", description: "Cherishing moments together." },
       { title: "December 25, 2024", description: "Christmas with love ❤️" },
+      
     ],
   
     // 📸 Picture Recap Page
     pictureTitle: "Our Pictures", // Title for the pictures recap page
     pictureGallery: [
-      { title: "January 1, 2024", description: "New Year's Celebration 🎉" }, // Picture entry
-      { title: "February 14, 2024", description: "Valentine's Day 💕" },
-      { title: "March 10, 2024", description: "Beach trip memories 🏖️" },
+      { title: "Agustus 5, 2024", description: "A beautiful day to remember. Inget ngga pas pertama kali jalan bareng? lucu banget taukk suka senyum senyum sendiri kalo keinget. Pertama kali ketemu tapi dah berasa bestie dari lahir wkkwk. " }, // Picture entry
+      { title: "September 6, 2024", description: "pap after LDR 😎 masih malu-malu babi tapi kiyowoo sekaliiii" },
+      { title: "Desember 21, 2024", description: "akhirnya ketemuu setelah LDR lama yeayyyyy, luka dikit g ngaruh wkwk. Niatnya mo maen maen bareng di malang malah gajadi😭 Tapi gapapa, semua ada hikmahnya, gaperlu disesali" },
+      { title: "Desember 23, 2024", description: "First time naik kereta bareng aaaaa, biasannya sendiri mulu. luvv dah pokoknya" },
+      { title: "Desember 23, 2024", description: "senyumnyaaaaaa behhhh cakep banget wkwk" },
+      { title: "Desember 27, 2024", description: "Dianter berobat, Thank youuu sayangg. Gapernah diperhatiin segininya seneng bgt" },
+      { title: "Januari 4, 2025", description: "Nonton film dirumah, mam bareng dirumah, maen kocheng, banyak lah pokoknyaa dan selalu suka asal bareng amas ehehehe" },
+      { title: "Januari 21, 2025", description: "beli nasi goreng sebelum hujan dan sebelum huru hara rumah tangga wkwkw, pulang telat jadinya harus mendengarkan ceramah bapak" },
+      { title: "Januari 31, 2025", description: "lucu, gemes, gaada tandingan dahhh. the only one pokoknya" },
+      { title: "Januari 31, 2025", description: " kenangan pas malem sebelum amas balik" },
+      { title: "Februari 14, 2025", description: "mang bowleh selucu ini haaa? jangan lucu lucu siii nanti banyak yang suka" },
+      { title: "Januari 12, 2025", description: "peluk jauhhhhhh" },
+      { title: "Januari 1, 2025", description :"anjayyyyy kedua kalinay kesini baru kesampean foto pas dah jadi pasangan wkwk" },
+      { title: "Desember 28, 2024", description : "Tahun baru-an bareng keluarga. soo exciteddd. semoga tahun depan bisa kaya gini lagii" },
+      { title: "Januari 31, 2025", description: "ke alun-alun untuk ketiga kalinyaaa. with the same person" },
+      { title: "Februari 1, 2025", description: " foto bareng mbah kong yeayyyy...h-1 amas balik. Jujur sedih pas ditinggal tapi gapapa kita ketemu lagi secepatnya ya sayanggg" },
+      
     ],
-  
 
   // 💌 Love Letter Page
-  loveLetterMessage: "Hi, I love you so much💖", // Message displayed on the love letter page
+  loveLetterMessage: "Hai cowokku yang paling ganteng, Bahagia terus yaakkk. I love u so much 💖 ", // Message displayed on the love letter page
 
   // 🎇 Closing Page
-  closingMessage: "Thank you for everything, my love! 💖 Wishing us many more wonderful years together.", // Closing message displayed
+  closingMessage: "Termakasih atas segalanya sayanggg! 💖 Wishing us many more wonderful years together.", // Closing message displayed
 
   /* 
   ████████████████████████████████████████
@@ -140,8 +169,10 @@ const config = {
 
   // 🔍 Search Queries (Only change if modifying search functionality)
   correctSearchQueries: [
-    "How long have we been together?", // Example of a correct search query
-    "how long have we been together", // Another example of a correct search query
+    "Berapa lama kita telah bersama?", // Example of a correct search query
+    "berapa lama kita telah bersama",
+    "Berapa lama kita telah bersama",
+    "berapa lama kita telah bersama?", // Another example of a correct search query
   ],
 };
 

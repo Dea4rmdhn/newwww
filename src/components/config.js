@@ -115,9 +115,8 @@ const config = {
     // 📝 Message Recap Page
     messageTitle: "Messages for you", // Title for the messages recap page
     messageGallery: [
-      { title: "20 Februari, 2025", description: "Tau gak sihh. Edek tuh khawatir banget sama amas. Bukan, bukan khawatir amas direbut orang lain (soalnya edek yakin, pesonaku nggak ada tandingannya 😎). Tapi edek khawatir amas kurang istirahat, makan nggak teratur, terus ngeroko terus" }, // Message entry
-      { title: "October 5, 2024", description: "Cherishing moments together." },
-      { title: "December 25, 2024", description: "Christmas with love ❤️" },
+      { title: "20 Februari, 2025", description: "Halo amass, tau gak sihh edek tu kangen weee, dah setaun gak ketemu gk siee wkwk canda. Amas harus happy terus yaaa... gabole sedih-sedih. Amas semangat terus yakk... edek bangga sama amas. Tapi, edek juga mau ingetin, jangan sampai lupa jaga kesehatan, ya. Istirahat yang cukup, makan yang teratur, kurangin ngambeknya dan kurang-kurangin ngerokoknya. Ingat ya, Amas itu berharga banget buat edek. Jadi, tolong jaga diri baik-baik, ya. Kalau ada apa-apa, jangan sungkan cerita sama edek. Edek selalu ada buat amas, no matter what . Oiyaaaaa  edek ngerasa belakangan ini kita agak kurang komunikasi karena punya kesibukan masing-masing. tapi edek harap kita bisa sama-sama luangin waktu walaupun bentar buat ngobrol kaya dulu lagi. Dah itu aja, bingung mo ngomong apa lagi. I Love You pokoknya 💖" }, 
+      
       
     ],
   
@@ -135,19 +134,19 @@ const config = {
       { title: "Januari 31, 2025", description: "lucu, gemes, gaada tandingan dahhh. the only one pokoknya" },
       { title: "Januari 31, 2025", description: " kenangan pas malem sebelum amas balik" },
       { title: "Februari 14, 2025", description: "mang bowleh selucu ini haaa? jangan lucu lucu siii nanti banyak yang suka" },
-      { title: "Januari 12, 2025", description: "peluk jauhhhhhh" },
-      { title: "Januari 1, 2025", description :"anjayyyyy kedua kalinay kesini baru kesampean foto pas dah jadi pasangan wkwk" },
+      { title: "Januari 12, 2025", description: "peluk jauhhhhhh. With you, I am home" },
+      { title: "Januari 1, 2025", description :"anjayyyyy kedua kalinya kesini baru kesampean foto pas dah jadi pasangan wkwk" },
       { title: "Desember 28, 2024", description : "Tahun baru-an bareng keluarga. soo exciteddd. semoga tahun depan bisa kaya gini lagii" },
       { title: "Januari 31, 2025", description: "ke alun-alun untuk ketiga kalinyaaa. with the same person" },
-      { title: "Februari 1, 2025", description: " foto bareng mbah kong yeayyyy...h-1 amas balik. Jujur sedih pas ditinggal tapi gapapa kita ketemu lagi secepatnya ya sayanggg" },
+      { title: "Februari 1, 2025", description: " foto bareng mbah kong yeayyyy...h-1 amas balik. Jujur sedih pas ditinggal tapi gapapa kita ketemu lagi secepatnya ya sayanggg. I love you more than words can say." },
       
     ],
 
   // 💌 Love Letter Page
-  loveLetterMessage: "Hai cowokku yang paling ganteng, Bahagia terus yaakkk. I love u so much 💖 ", // Message displayed on the love letter page
+  loveLetterMessage: "Cowokku yang paling ganteng, Bahagia terus yaakkk. I love u so much orang paling kiyowoooo 💖 ", // Message displayed on the love letter page
 
   // 🎇 Closing Page
-  closingMessage: "Termakasih atas segalanya sayanggg! 💖 Wishing us many more wonderful years together.", // Closing message displayed
+  closingMessage: "Every love story is beautiful, but ours is my favorite! 💖 Wishing us many more wonderful years together.", // Closing message displayed
 
   /* 
   ████████████████████████████████████████
